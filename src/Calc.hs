@@ -95,8 +95,7 @@ getBackDistrict f b d =
     newC = Map.unionWith (+) returnFundsCat $ cap d
     newA = available d + Map.foldr (+) 0 returnFundsCat
 
-getBackWorld ::
-     BillMap -> (World, BillMap) -> (World, BillMap)
+getBackWorld :: BillMap -> (World, BillMap) -> (World, BillMap)
 getBackWorld r (w, f) = (newW, newR)
   where
     cmpFR = Map.unionWith (Map.unionWith (-)) f r

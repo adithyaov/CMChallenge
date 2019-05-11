@@ -19,7 +19,7 @@ extra-source-files:  CHANGELOG.md
 executable CMChallenge
   main-is:             Main.hs
   other-modules:       Calc
-                     , IO
+                     , IOJson
   -- other-extensions:
   build-depends:       base ^>=4.10.1.0
                      , containers
